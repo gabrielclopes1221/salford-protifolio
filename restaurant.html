@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Case Study - The Local Bistro</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="skills.html">Skills</a></li>
+            <li><a href="showcase.html">Showcase</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="restaurant.html" class="active">Case Study</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <h1>Case Study: The Local Bistro</h1>
+        
+        <section>
+            <h2>Digital Transformation Goals</h2>
+            <p>
+                As the acting <strong>CTO</strong> for The Local Bistro, I have implemented this digital prototype to solve the restaurant's reliance on manual phone bookings. 
+                The goal is to modernize communication, engage the university demographic, and streamline the reservation process.
+            </p>
+        </section>
+
+        <section class="card">
+            <h2>Restaurant Information</h2>
+            <p><strong>Address:</strong> 45 University Rd, Salford, M5 4WT</p>
+            <p><strong>Hours:</strong> Mon-Sun: 11:00 AM - 10:00 PM</p>
+            <p><strong>Phone:</strong> 0161 123 4567</p>
+        </section>
+
+        <section>
+            <h2>Connect Socially</h2>
+            <ul class="social-links">
+                <li><a href="https://facebook.com" target="_blank">📘 Facebook Page</a></li>
+                <li><a href="https://instagram.com" target="_blank">📷 Instagram Feed</a></li>
+                <li><a href="https://twitter.com" target="_blank">🐦 X (Twitter) Updates</a></li>
+            </ul>
+        </section>
+
+        <section class="card">
+            <h2>Online Booking & Feedback</h2>
+            <p>Please use the form below to request a table. This system will automatically format an email to our front-of-house team.</p>
+            
+            <form id="booking-form">
+                <label for="name">Full Name</label>
+                <input type="text" id="name" placeholder="e.g., John Smith" required>
+                
+                <label for="type">Inquiry Type</label>
+                <select id="type">
+                    <option value="Reservation">Table Reservation</option>
+                    <option value="Feedback">Customer Feedback</option>
+                    <option value="Event">Private Event Inquiry</option>
+                </select>
+                
+                <label for="message">Details (Date, Time, Guests)</label>
+                <textarea id="message" rows="4" placeholder="I would like to book a table for..." required></textarea>
+                
+                <button type="submit">Send Request via Email</button>
+            </form>
+        </section>
+    </main>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
